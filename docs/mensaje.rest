@@ -1,0 +1,37 @@
+POST http://127.0.0.1:3000/api/enviar-mensaje
+Content-Type: application/json
+
+{
+    "numero": "51960721815",
+    "mensaje": {
+        "type": "text",
+        "body": "Hola chola, buenos dias levantate"
+    }
+}
+
+###Imagen
+POST http://127.0.0.1:3000/api/enviar-mensaje
+Content-Type: application/json
+
+{
+    "numero": "51960721815",
+    "mensaje": {
+        "type": "image",
+        "link": "https://www.shutterstock.com/image-vector/car-audio-logo-silhouette-template-260nw-2483373791.jpg",
+        "caption": "🚗 Audio Car Premium\n\nInstalación profesional de sonido para autos.\n\nEscríbenos para una cotización."
+    }
+}
+
+###document
+POST http://127.0.0.1:3000/api/enviar-mensaje
+Content-Type: application/json
+
+{
+    "numero": "51960721815",
+    "mensaje": {
+        "type": "document",
+        "link": "https://dmc.pe/wp-content/uploads/2025/08/brochure-espec-N8N-1.pdf",
+        "caption": "Te envio mi guia ",
+        "filename": "Maria.pdf"
+    }
+}

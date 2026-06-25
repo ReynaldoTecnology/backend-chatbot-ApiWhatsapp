@@ -7,7 +7,7 @@ const app = express();
 // req.body
 app.use(express.json());
 
-app.use("/Api", router);
+app.use("/api", router);
 
 //Para probar si hay conexión
 app.get("/", function(req,res){

@@ -17,6 +17,4 @@ function getWhatsappProviders(){
     }
 }
 
-module.exports = {
-    getWhatsappProviders
-}
+module.exports = getWhatsappProviders();
