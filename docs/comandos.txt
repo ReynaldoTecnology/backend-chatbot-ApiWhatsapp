@@ -2,3 +2,4 @@ npm init --y             //para iniciar proyecto
 npm install express      //Para instalar express
 git init                 //Para iniciar el git
 npm install axios        //para el llamado de las apis de los proveedores
+npm install dotenv --save

@@ -1,7 +1,7 @@
 const axios = require("axios");
 const whatsappUrl = "https://graph.facebook.com/v25.0/1171096022745217/messages"
 const headers = {
-    Authorization: "Bearer EAAXhwkLkgmkBRgFlAv8h4VuNd7LZAphk1YVdGcjSWYiURaF0JviUL59LsqQ2RZCqZBKjt6ZANQ2yL4e3UOSfpja3VJorFFeM8qtMQAZAJYP2DSbMOqT3G7Cv9g4FNiXQKsRZBmNbZCPfIthDRv3ZCW2KDKYZCpQ9zZAPptG9B5krslFWhhbFRVdXh1f8lfK7mBmU9t7VjLmCet0d0wMdvGvsyriN4OhvgSZBMxBcm8h8s4xd9ZBvRWiZCab7nfMA2buksJZAu3MisGydxG8uKwufkgqb5l1p9OAJxaDMDI7SvcpEcZD",
+    Authorization: "Bearer "+process.env.WHATSAPP_ACCESS_TOKEN, //Se instala un paquete para la variable de entorno dotenv
     "Content-Type": "application/json"
 }
 
@@ -20,6 +20,7 @@ async function sendMessage(number, messageData){
         
     } catch (error) {
         
+    
         console.log(error.respuesta?.data);
         throw error; 
     }

@@ -1,6 +1,7 @@
+require('dotenv').config(); //Leere archivo .env. va primero en la parte de arriba
 const express = require("express");
 const router = require("./routes");
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 const app = express();
 

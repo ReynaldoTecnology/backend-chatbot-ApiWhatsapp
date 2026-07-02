@@ -22,7 +22,7 @@ Content-Type: application/json
     }
 }
 
-###document
+###documento
 POST http://127.0.0.1:3000/api/enviar-mensaje
 Content-Type: application/json
 
